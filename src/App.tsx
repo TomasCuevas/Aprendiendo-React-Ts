@@ -8,6 +8,9 @@ import { TimerPadre } from './components/TimerPadre';
 // useReducer
 import { CounterRed } from './components/CounterRed';
 
+// customHooks
+import { Form } from './components/Form';
+
 export const App = () => {
   return (
     <>
@@ -26,6 +29,10 @@ export const App = () => {
       <h2 className="mt-5">useReducer</h2>
       <hr />
       <CounterRed />
+
+      <h2 className="mt-5">Custom Hooks</h2>
+      <hr />
+      <Form />
     </>
   );
 };
