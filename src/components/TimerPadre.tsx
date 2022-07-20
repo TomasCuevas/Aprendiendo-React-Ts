@@ -5,7 +5,7 @@ export const TimerPadre = () => {
   const [milisegundos, setMilisegundos] = useState(1000);
 
   return (
-    <div className="mt-2">
+    <>
       <span>Milisegundos {milisegundos}</span>
       <br />
       <button onClick={() => setMilisegundos(1000)} className="btn btn-outline-success">
@@ -16,6 +16,6 @@ export const TimerPadre = () => {
       </button>
 
       <Timer milisegundos={milisegundos} />
-    </div>
+    </>
   );
 };

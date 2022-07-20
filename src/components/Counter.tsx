@@ -12,7 +12,7 @@ export const Counter = () => {
   };
 
   return (
-    <div className="mt-2">
+    <>
       <h3>Counter: {counter}</h3>
       <br />
       <button onClick={() => onIncrement(counter)} className="btn btn-outline-primary">
@@ -24,6 +24,6 @@ export const Counter = () => {
       <button onClick={() => setCounter(10)} className="btn btn-outline-danger">
         Reset
       </button>
-    </div>
+    </>
   );
 };
