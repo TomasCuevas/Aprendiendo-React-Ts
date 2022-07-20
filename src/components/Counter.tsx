@@ -12,7 +12,7 @@ export const Counter = () => {
   };
 
   return (
-    <div className="mt-5">
+    <div className="mt-2">
       <h3>Counter: {counter}</h3>
       <br />
       <button onClick={() => onIncrement(counter)} className="btn btn-outline-primary">

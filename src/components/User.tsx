@@ -6,7 +6,10 @@ interface Users {
 }
 
 export const User = () => {
-  const [user, setUser] = useState<Users>();
+  const [user, setUser] = useState<Users>({
+    _id: '',
+    name: '',
+  });
 
   const onLogin = (): void => {
     setUser({
@@ -23,7 +26,7 @@ export const User = () => {
   };
 
   return (
-    <div className="mt-5">
+    <div className="mt-4">
       <h3>User</h3>
       <button onClick={onLogin} className="btn btn-primary">
         Login
